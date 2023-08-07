@@ -59,6 +59,7 @@
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
   const search = document.getElementById("search-products");
+  const productform = document.getElementById("products-form");
   // event listeners.
   document.addEventListener("DOMContentLoaded", function() {
     console.log("Products loaded");
