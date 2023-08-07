@@ -58,7 +58,7 @@
   // dom Elements
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
-  
+  const search = document.getElementById("search-products");
   // event listeners.
   document.addEventListener("DOMContentLoaded", function() {
     console.log("Products loaded");
@@ -75,6 +75,10 @@
     alert('Customer Review Clicked!');
   }
 
+  search.addEventListener('click', searchAlert);
+  function searchAlert() {
+    alert('Searchd!');
+  }
     
     
 
