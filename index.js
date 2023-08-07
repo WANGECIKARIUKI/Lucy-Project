@@ -20,7 +20,8 @@
       const limitLi = document.createElement('li');
       limitLi.innerHTML = 'Limit: ' + products[i].limit;
   
-      
+      productLi.appendChild(descriptionLi);
+      productLi.appendChild(limitLi);
   
       mainOl.appendChild(productLi);
     }
