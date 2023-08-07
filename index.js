@@ -46,7 +46,7 @@
     }
   }
 
-  fetch("https://developer.safaricom.co.ke/APIs")
+  fetch("http://localhost:3000/products")
   .then(response => response.json())
   .then(Data => console.log(Data))
   .catch(error => {
