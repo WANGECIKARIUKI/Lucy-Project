@@ -92,17 +92,3 @@ form input {
   outline: 0;
   font-size: 18px;
 }
-
-#contentArea{
-  position: relative;
-  top: 10%;
-  height: auto;
-  width: 25%;
-  font-size: 18px;
-  font-weight: 600;
-  color: rgb(85, 84, 84);
-  text-align: justify;
-  padding: 15px 30px 15px 30px;
-  border-radius: 6px;
-  background-color: rgba(143, 219, 21, 0.221);
-}
