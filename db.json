@@ -1,0 +1,34 @@
+{
+	"products": [
+		{
+			"id": 1,
+			"name": "Send Money",
+			"description": "Send Money using Lucash",
+			"Limit": 500000
+		},
+		{
+			"id": 2,
+			"name": "Trading",
+			"description": "Buy and sell cryptocurrencies",
+			"Limit": 99000
+		},
+		{
+			"id": 3,
+			"name": "Loans",
+			"description": "Apply for Mobile Loans on Lucash",
+			"Limit": 100000
+		},
+		{
+			"id": 4,
+			"name": "Buy Goods",
+			"description": "Purchase products using Lucash from Stored and Supermarkets",
+			"Limit": 20000
+		},
+		{
+			"id": 5,
+			"name": "Online Banking",
+			"description": "Deposit, withdrwaw and send money using Lucash",
+			"Limit": 99000
+		}
+	]
+}

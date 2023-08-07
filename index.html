@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+    <title>Lucash Fintech</title>
+</head>
+<body>
+   <nav>
+    <ul>
+        <li><a href="#Products">Products</li></a>
+    </ul>
+   </nav>
+   <main>
+    <h1>LuCash Products</h1>
+    <p>The products are here to help you run your errands while seated at home.</p>
+        </P>
+    </section>
+    <section class = "Products">
+        <div id = "products-Form">
+        <h2>Products</h2>
+        <input type = "text" id="products" placeholder= "">
+        <button onClick ="search-products()">search-products</button>
+        
+        <datalist id = "products">
+            <option value = "Send Money">Send Money</option>
+            <option value = "Trade">Trade</option>
+            <option value = "Loans">Loans</option>
+            <option value = "Buy Goods">Buy Goads</option>
+            <option value = "Mobile Banking">Mobile Banking</option>
+            <option value = ""></option>"
+            </datalist>
+        </div>
+    </section>
+    <section id = "Form">
+        <div>
+        <h4>Registration Form</h4>
+        <form id="find" class="ContentArea">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="Pnumber" id="Pnumber" value=""><br>
+        <label for="Pnumber">Phone Number</label><br>
+        <input type="text" id="lname" name="lname" value="">
+
+        <h5> Choose your Gender</h5>
+        <label for="male">Male</label><br>
+        <input type="checkbox" id="male" name="male" value=""><br>
+        <label for="female">Female</label><br>
+        <input type="checkbox" id="female" name="female" value=""><br>
+        <button id="submit"> Submit Button</button>
+        </form> 
+        </div>
+    </section>
+    <section id = "Customer-Reviews">
+        <h6>Customer reviews</h6>
+        <form>
+            <input type="text" id="CustomerReview" name="CustomerReview" placeholder="Write your reviews here"><br>
+            <button id="submit"> Submit Button</button>
+        </form>
+    </section>
+    <script src="./index.js"></script>
+    <script src="db.json"></script>
+   </main>
+   <footer>
+    <p>inc.2023 Lucash. All rights Reserved.</p>
+    <p>Contact Info: Lucash@gmail.com </p>
+    <p>0711122267</p>
+</footer>
+</body>
+</html>
