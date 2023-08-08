@@ -28,23 +28,6 @@ function showProducts() {
     document.productsForm.appendChild(mainOl);
   }
 
-  //function to search for products
-  function Products(){
-  
-    const productsUrl= "https://developer.safaricom.co.ke/APIs"
-  
-  return productsUrl
-
-  const productData = {
-    method: "POST",
-    headers: {
-        "content-type":"application/json",
-        "Accept":"application/json"
-    },
-    body: JSON.stringify()
-    }
-  }
-
   // dom Elements
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
