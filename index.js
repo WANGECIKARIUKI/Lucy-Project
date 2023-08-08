@@ -61,8 +61,8 @@ function clickSubmitAlert() {
   alert('Submitted!');
 }
 
-customerReview.addEventListener('click', clickReviewAlert);
-function clickReviewAlert() {
+customerReview.addEventListener('click', clickAlert);
+function clickAlert() {
   alert('Customer Review Clicked!');
 }
 search.addEventListener('click', (e) => {
@@ -79,7 +79,7 @@ search.addEventListener('click', (e) => {
 let products = "";
 let keyword = "i";
 
-//function to diplay products
+//function to display products
 function showProducts(){
-  keyword=search.value;
+  keyword=search.products;
 }
