@@ -89,7 +89,7 @@ let products = "";
 let keyword = "i";
 
 //function to diplay products
-function showProducts(){
+function searchProduct(){
   keyword=search.value;
 }
    });
