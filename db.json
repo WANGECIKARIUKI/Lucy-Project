@@ -27,8 +27,8 @@
 		{
 			"id": 5,
 			"name": "Online Banking",
-			"description": "Deposit, withdrwaw and send money using Lucash",
+			"description": "Deposit, withdraw and send money using Lucash",
 			"Limit": 99000
-		}
-	]
+		},
+	],
 }
