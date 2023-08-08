@@ -30,11 +30,11 @@
   }
 
   //function to search for products
-  function Products(){
+  function showProducts(){
   
     const productsUrl = "https://developer.safaricom.co.ke/APIs"
   
-  return productsUrl
+  return showProducts;
 
   const productData = {
     method: "POST",
@@ -59,10 +59,10 @@
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
   const search = document.getElementById("search-products");
-  const productform = document.getElementById("products-form");
-  // event listeners.
+
+  //event listeners
   document.addEventListener("DOMContentLoaded", function() {
-    console.log("Products loaded");
+    console.log("DOMContentLoaded");
     showProducts(); // Call the function to load products
   });
   
@@ -71,16 +71,29 @@
     alert('Submitted!');
   }
   
-  CustomerReview.addEventListener('click', clickReviewAlert);
+  CustomerReview.addEventListener('submit', clickReviewAlert);
   function clickReviewAlert() {
     alert('Customer Review Clicked!');
   }
 
-  search.addEventListener('click', searchAlert);
+  search.addEventListener('click', (e) => {
+    e.preventDefault();
+    productform();
+    submit();
+ 
+  } );
   function searchAlert() {
-    alert('Searchd!');
+    alert('Searched!');
   }
-    
+
+//variable to keep track of the search product
+let products = "";
+let keyword = "i";
+
+//function to diplay products
+function showProducts(){
+  keyword=search.value;
+}
     
 
 
