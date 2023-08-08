@@ -45,15 +45,6 @@ function showProducts() {
     }
   }
 
-  fetch("http://localhost:3000/products")
-  .then(response => response.json())
-  .then(Data => console.log(Data))
-  .catch(error => {
-      alert("Error Detected!")
-      console.log(err.message)
-  });
-
-
   // dom Elements
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
