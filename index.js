@@ -25,17 +25,17 @@ function showProducts() {
       mainOl.appendChild(productLi);
     }
   
-    document.productsForm.appendChild(mainOl);
+    document.searchProducts.appendChild(mainOl);
   }
 
   // dom Elements
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
   const search = document.getElementById("search-products");
-  const productform = document.getElementById("products-form");
-  // event listeners.
+
+  //event listeners
   document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOMContentloaded");
+    console.log("DOMContentLoaded");
     showProducts(); // Call the function to load products
   });
   
@@ -44,9 +44,24 @@ function showProducts() {
     alert('Submitted!');
   }
   
-  CustomerReview.addEventListener('click', clickReviewAlert);
+  CustomerReview.addEventListener('submit', clickReviewAlert);
   function clickReviewAlert() {
     alert('Customer Review Clicked!');
   }
+
+  search.addEventListener('click', (e) => {
+    e.preventDefault();
+    productform();
+    submit();
+ 
+  } );
+  function searchAlert() {
+    alert('Searched!');
+  }
+
     
-    
+
+
+
+
+
