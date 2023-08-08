@@ -36,7 +36,7 @@
   
     const productsUrl = "http://localhost:3000/products"
   
-  return searchProducts;
+  return searchProduct;
 
   const productData = {
     method: "POST",
