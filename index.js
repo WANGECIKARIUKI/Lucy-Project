@@ -28,23 +28,6 @@ function createList(products) {
   document.searchProduct.appendChild(mainOl);
 }
 
-//function to search for products
-  function showProducts(){
-  
-    const productsUrl = "http://localhost:3000/products"
-  
-  return showProducts;
-
-  const productData = {
-    method: "POST",
-    headers: {
-        "content-type":"application/json",
-        "Accept":"application/json"
-    },
-    body: JSON.stringify()
-    }
-  }
-
   fetch("http://localhost:3000/products")
   .then(response => response.json())
   .then(Data => console.log(Data))
