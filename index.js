@@ -34,7 +34,7 @@ const customerReview = document.getElementById('customerReview');
 
 // event listeners.
 document.addEventListener("DOMContentLoaded", function() {
-  console.log("Products loaded");
+  console.log("DOMContentloaded");
   showProducts(); // Call the function to load products
 });
 
