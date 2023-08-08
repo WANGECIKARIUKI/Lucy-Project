@@ -61,9 +61,9 @@ function clickSubmitAlert() {
   alert('Submitted!');
 }
 
-customerReview.addEventListener('click', clickAlert);
-function clickAlert() {
-  alert('Customer Review Clicked!');
+customerReview.addEventListener('click', submitReview);
+function subReview() {
+  alert('Customer Submit Review!');
 }
 search.addEventListener('click', (e) => {
     e.preventDefault();
@@ -74,12 +74,3 @@ search.addEventListener('click', (e) => {
   function searchAlert() {
     alert('Searched!');
   }
-
-//variable to keep track of the search product
-let products = "";
-let keyword = "i";
-
-//function to display products
-function showProducts(){
-  keyword=search.products;
-}
