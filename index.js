@@ -25,7 +25,7 @@ function showProducts() {
       mainOl.appendChild(productLi);
     }
   
-    document.body.appendChild(mainOl);
+    document.productsForm.appendChild(mainOl);
   }
 
   //function to search for products
@@ -52,7 +52,7 @@ function showProducts() {
   const productform = document.getElementById("products-form");
   // event listeners.
   document.addEventListener("DOMContentLoaded", function() {
-    console.log("Products loaded");
+    console.log("DOMContentloaded");
     showProducts(); // Call the function to load products
   });
   
@@ -66,7 +66,7 @@ function showProducts() {
     alert('Customer Review Clicked!');
   }
 
-  search.addEventListener('click', searchAlert);
+  search.addEventListener('click', clicksearchAlert);
   function searchAlert() {
     alert('Searchd!');
   }
