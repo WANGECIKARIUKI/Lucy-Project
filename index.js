@@ -48,9 +48,8 @@ function createList(products) {
   fetch("http://localhost:3000/products")
   .then(response => response.json())
   .then(Data => console.log(Data))
-  .catch(error => {
-      alert("Error Detected!")
-      console.log(err.message)
+  .catch(error => alert("Error Detected!")
+         
   });
 
 // dom Elements
