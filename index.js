@@ -31,7 +31,7 @@ function createList(products) {
 //function to search for products
   function showProducts(){
   
-    const productsUrl = "https://developer.safaricom.co.ke/APIs"
+    const productsUrl = "http://localhost:3000/products"
   
   return showProducts;
 
