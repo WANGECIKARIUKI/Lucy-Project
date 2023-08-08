@@ -32,7 +32,7 @@ function showProducts() {
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
   const search = document.getElementById("search-products");
-  const products = document.getElementById('products");
+  const list = document.getElementById('products");
 
   //event listeners
   document.addEventListener("DOMContentLoaded", function() {
