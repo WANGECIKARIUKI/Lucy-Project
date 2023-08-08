@@ -61,7 +61,7 @@ function clickSubmitAlert() {
   alert('Submitted!');
 }
 
-customerReview.addEventListener('submit', submitReview);
+customerReview.addEventListener('click', clickAlert);
 function subReview() {
   alert('Customer Submit Review!');
 }
