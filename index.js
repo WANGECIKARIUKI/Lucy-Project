@@ -26,13 +26,13 @@
       mainOl.appendChild(productLi);
     }
   
-    document.search-products.appendChild(mainOl);
+    document.search-results.appendChild(mainOl);
   }
 
   //function to search for products
   function showProducts(){
   
-    const productsUrl = "https://developer.safaricom.co.ke/APIs"
+    const productsUrl = "http://localhost:3000/products"
   
   return showProducts;
 
@@ -59,6 +59,8 @@
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
   const search = document.getElementById("search-products");
+  const search-results = document.getElementById("search-results");
+
 
   //event listeners
   document.addEventListener("DOMContentLoaded", function() {
