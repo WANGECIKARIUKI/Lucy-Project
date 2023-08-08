@@ -40,8 +40,8 @@ function showProducts() {
     showProducts(); // Call the function to load products
   });
   
-  submit.addEventListener('click', clickSubmitAlert);
-  function clickSubmitAlert() {
+  submit.addEventListener('click', clickAlert);
+  function clickAlert() {
     alert('Submitted!');
   }
   
