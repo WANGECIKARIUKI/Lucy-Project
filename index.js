@@ -61,7 +61,7 @@ function clickSubmitAlert() {
   alert('Submitted!');
 }
 
-customerReview.addEventListener('click', submitReview);
+customerReview.addEventListener('submit', submitReview);
 function subReview() {
   alert('Customer Submit Review!');
 }
@@ -74,3 +74,7 @@ search.addEventListener('click', (e) => {
   function searchAlert() {
     alert('Searched!');
   }
+//function to diplay products
+function showProducts() {
+  console.log('products');
+}
