@@ -31,7 +31,7 @@ function showProducts() {
   //function to search for products
   function Products(){
   
-    const productsUrl = "https://developer.safaricom.co.ke/APIs"
+    const productsUrl= "http://localhost:3000/products"
   
   return productsUrl
 
@@ -64,11 +64,6 @@ function showProducts() {
   CustomerReview.addEventListener('click', clickReviewAlert);
   function clickReviewAlert() {
     alert('Customer Review Clicked!');
-  }
-
-  search.addEventListener('click', clicksearchAlert);
-  function searchAlert() {
-    alert('Searchd!');
   }
     
     
