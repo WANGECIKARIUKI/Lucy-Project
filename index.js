@@ -49,12 +49,6 @@ function showProducts() {
     alert('Customer Review Clicked!');
   }
 
-  search.addEventListener('click', (e) => {
-    e.preventDefault();
-    productform();
-    submit();
- 
-  } );
   function searchAlert() {
     alert('Searched!');
   }
