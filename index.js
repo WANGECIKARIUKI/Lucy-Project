@@ -26,7 +26,7 @@
       mainOl.appendChild(productLi);
     }
   
-    document.search-results.appendChild(mainOl);
+    document.showProduct.appendChild(mainOl);
   }
 
   //function to search for products
@@ -59,7 +59,7 @@
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
   const search = document.getElementById("search-products");
-  const search-results = document.getElementById("search-results");
+  const showProduct = document.getElementById("show-product");
 
 
   //event listeners
