@@ -28,9 +28,35 @@ function createList(products) {
   document.searchProduct.appendChild(mainOl);
 }
 
+//function to search for products
+  function showProducts(){
+  
+    const productsUrl = "http://localhost:3000/products"
+  
+  return showProducts;
+
+  const productData = {
+    method: "POST",
+    headers: {
+        "content-type":"application/json",
+        "Accept":"application/json"
+    },
+    body: JSON.stringify()
+    }
+  }
+
+  fetch("http://localhost:3000/products")
+  .then(response => response.json())
+  .then(Data => console.log(Data))
+  .catch(error => {
+      alert("Error Detected!")
+      console.log(err.message)
+  });
+
 // dom Elements
 const submit = document.getElementById('submit');
 const customerReview = document.getElementById('customerReview');
+const search = document.getElementById("search-products");
 
 // event listeners.
 document.addEventListener("DOMContentLoaded", function() {
@@ -46,4 +72,22 @@ function clickSubmitAlert() {
 customerReview.addEventListener('click', clickReviewAlert);
 function clickReviewAlert() {
   alert('Customer Review Clicked!');
+}
+search.addEventListener('click', (e) => {
+    e.preventDefault();
+    productform();
+    submit();
+ 
+  } );
+  function searchAlert() {
+    alert('Searched!');
+  }
+
+//variable to keep track of the search product
+let products = "";
+let keyword = "i";
+
+//function to diplay products
+function showProducts(){
+  keyword=search.value;
 }
