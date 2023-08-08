@@ -26,7 +26,7 @@
       mainOl.appendChild(productLi);
     }
   
-    document.body.appendChild(mainOl);
+    document.search-products.appendChild(mainOl);
   }
 
   //function to search for products
