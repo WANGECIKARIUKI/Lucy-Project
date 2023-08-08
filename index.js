@@ -1,5 +1,5 @@
 
-  function showProduct() {
+  function showProducts() {
     fetch("http://localhost:3000/products")
       .then(response => response.json())
       .then(data => createList(Products))
@@ -30,11 +30,11 @@
   }
 
   //function to search for products
-  function showProducts(){
+  function searchProduct(){
   
     const productsUrl = "http://localhost:3000/products"
   
-  return showProducts;
+  return searchProducts;
 
   const productData = {
     method: "POST",
@@ -59,7 +59,7 @@
   const submit = document.getElementById('submit');
   const CustomerReview = document.getElementById('CustomerReview');
   const search = document.getElementById("search-products");
-  const showProduct = document.getElementById("show-product");
+  const searchProduct = document.getElementById("search-product");
 
 
   //event listeners
