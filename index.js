@@ -1,4 +1,6 @@
-
+ document.addEventListener("DOMContentLoaded", function() {
+    console.log("DOMContentLoaded");
+  
   function showProducts() {
     fetch("http://localhost:3000/products")
       .then(response => response.json())
@@ -61,13 +63,7 @@
   const search = document.getElementById("search-products");
   const searchProduct = document.getElementById("search-product");
 
-
-  //event listeners
-  document.addEventListener("DOMContentLoaded", function() {
-    console.log("DOMContentLoaded");
-    showProducts(); // Call the function to load products
-  });
-  
+  // Event Listener
   submit.addEventListener('click', clickSubmitAlert);
   function clickSubmitAlert() {
     alert('Submitted!');
@@ -78,7 +74,7 @@
     alert('Customer Review Clicked!');
   }
 
-  search.addEventListener('click', (e) => {
+  searchProduct.addEventListener('click', (e) => {
     e.preventDefault();
     productform();
     submit();
@@ -96,6 +92,7 @@ let keyword = "i";
 function showProducts(){
   keyword=search.value;
 }
+   });
     
 
 
