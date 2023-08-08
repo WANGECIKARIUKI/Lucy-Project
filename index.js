@@ -29,11 +29,11 @@ function createList(products) {
 }
 
 //function to search for products
-  function showProducts(){
+  function searchProducts(){
   
     const showProductsUrl = "http://localhost:3000/products"
   
-  return showProducts;
+  return searchProducts;
 
   const productData = {
     method: "POST",
@@ -44,13 +44,6 @@ function createList(products) {
     body: JSON.stringify()
     }
   }
-
-  fetch("http://localhost:3000/products")
-  .then(response => response.json())
-  .then(Data => console.log(Data))
-  .catch(error => alert("Error Detected!")
-         
-  });
 
 // dom Elements
 const submit = document.getElementById('submit');
