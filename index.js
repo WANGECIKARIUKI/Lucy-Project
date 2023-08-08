@@ -25,7 +25,7 @@ function createList(products) {
     mainOl.appendChild(productLi);
   }
 
-  document.searchProducts.appendChild(mainOl);
+  document.searchProduct.appendChild(mainOl);
 }
 
 // dom Elements
